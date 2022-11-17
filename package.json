@@ -1,0 +1,45 @@
+{
+  "name": "desafiofinal2",
+  "version": "1.0.0",
+  "description": "CoderHouse",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "mongo": "nodemon src/server.js",
+    "archivo": "nodemon src/server.js",
+    "memoria": "nodemon src/server.js",
+    "firebase": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jocs1989/DesafioFinal2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jocs1989/DesafioFinal2/issues"
+  },
+  "homepage": "https://github.com/jocs1989/DesafioFinal2#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "connect-mongo": "^4.6.0",
+     "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "faker": "^5.5.3",
+    "firebase-admin": "^11.2.0",
+    "joi": "^17.7.0",
+    "mongodb": "^4.11.0",
+    "mongoose": "^6.7.0",
+    "nodemon": "^2.0.20",
+    "normalizr": "^3.6.2"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0"
+  }
+}
