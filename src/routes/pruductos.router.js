@@ -19,7 +19,7 @@ router.get("/", async (req, res) => {
     //res.status(200).json(respuesta);
     //res.status(200).render('partials/productos',{artuculos: respuesta});
     
-    res.status(200).render('partials/productos',{artuculos: getArticulos});
+    res.status(200).render('partials/registro',{artuculos: getArticulos});
   } catch (err) {
     console.error(err);
     //res.status(400).json({ error: err.toString() });
@@ -55,8 +55,8 @@ router.post("/", isAdmin, async (req, res) => {
 
    
 
-    const valores = await articulos.save(producto);
-    //const valores = await articulos.save(generaProducto());
+    //const valores = await articulos.save(producto);
+    const valores = await articulos.save(generaProducto());
     res.status(200).json(valores);
   } catch (err) {
     console.error(err);

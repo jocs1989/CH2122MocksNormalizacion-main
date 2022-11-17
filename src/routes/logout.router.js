@@ -49,7 +49,7 @@ router.post("/", validateUserLogin(), async (req, res, next) => {
           
           req.session.email=usuario.email
           req.session.name=resultado[0].nombre
-          res.status(200).json({ acceso: "Bienvenido" });
+          res.status(200).render("partials/usuario", { usuario:resultado[0] });
         } else {
           // not valid to password 
           res

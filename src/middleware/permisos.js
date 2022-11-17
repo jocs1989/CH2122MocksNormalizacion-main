@@ -1,4 +1,5 @@
 export function isAdmin(req, res, next) {
+  console.log(req.session.administrador)
     if (req.session.administrador) {
       next();
     } else {
