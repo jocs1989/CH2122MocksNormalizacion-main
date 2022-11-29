@@ -5,8 +5,12 @@ import ProductosTest from "./pruductos.mocks.router.js";
 import Chat from "./chat.router.js";
 import User from "./user.router.js";
 import Login from "./logout.router.js"
+import Info from "./info.router.js"
+import Randoms from "./randoms.router.js";
 function managerRouter(app){  
-    //administrar las rutas del negocio     
+    //administrar las rutas del negocio 
+    app.use("/info",Info); 
+    app.use("/api/randoms/",Randoms);   
     app.use("/api/productos/", Productos);
     app.use("/api/carrito/", Carrito);
     app.use("/api/productos-test/",ProductosTest);
