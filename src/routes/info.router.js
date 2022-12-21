@@ -1,4 +1,5 @@
 import { Router } from "express";
+import Logger from "../middleware/logger/logger.js"
 const router = Router();
 
 
@@ -13,6 +14,7 @@ router.get("/", async (req, res, next) => {
             'SO':process.platform,
             'Memory':process.memoryUsage()
         }
+        
         
       res.status(200).json({'info':info})
     } catch (err) {
